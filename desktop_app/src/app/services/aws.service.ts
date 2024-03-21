@@ -15,15 +15,10 @@ export class AwsService {
   public airDropItemdata: any;
 
   constructor() {
-    // window['AWS'].config.update({
-    //   accessKeyId: 'AKIAI54GMQ6SFKTC65NA',
-    //   secretAccessKey: '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',
-    //   region: 'us-east-2'
-    // });
     this.dynamodb = new DynamoDB({
       apiVersion: '2012-10-08',
-      accessKeyId: 'AKIAI54GMQ6SFKTC65NA',
-      secretAccessKey: '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',
+      accessKeyId: '',
+      secretAccessKey: '',
       region: 'us-east-2'
     });
     this.docClient = new DynamoDB.DocumentClient(this.dynamodb);
